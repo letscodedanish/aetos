@@ -24,12 +24,16 @@ const HomePage: React.FC = () => {
           <div className="service-card">
             <div className="service-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"></path>
+                <path d="M9 12l2 2 4-4"></path>
+                <path d="M21 12c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z"></path>
+                <path d="M3 12c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2z"></path>
+                <path d="M12 3c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2z"></path>
+                <path d="M12 21c0 1-1 2-2 2s-2-1-2-2 1-2 2-2 2 1 2 2z"></path>
               </svg>
             </div>
-            <h3 className="service-title">Cloud Strategy & Migration</h3>
+            <h3 className="service-title">Software + AI Integration</h3>
             <p className="service-description">
-              Strategic cloud adoption planning, application migration, and optimization for maximum efficiency and cost savings.
+              Seamlessly fuse intelligence into your existing systems with battle-tested AI engines integrated into your CRM, booking platforms, and operational tools.
             </p>
           </div>
           
@@ -39,9 +43,9 @@ const HomePage: React.FC = () => {
                 <path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18"></path>
               </svg>
             </div>
-            <h3 className="service-title">Custom Software Development</h3>
+            <h3 className="service-title">Workflow Automation</h3>
             <p className="service-description">
-              End-to-end software development services, from concept and design to deployment and maintenance.
+              Automate your 5-star reputation with intelligent monitoring, instant responses, and critical issue escalation across all review platforms.
             </p>
           </div>
           
@@ -54,9 +58,52 @@ const HomePage: React.FC = () => {
                 <circle cx="7" cy="7" r="3"></circle>
               </svg>
             </div>
-            <h3 className="service-title">DevOps & Automation</h3>
+            <h3 className="service-title">AI Chatbots & Virtual Assistants</h3>
             <p className="service-description">
-              Streamline your development pipeline with CI/CD, infrastructure as code, and automated testing solutions.
+              Deliver instant, intelligent, and personalized interactions across all customer touchpoints with our AI-powered conversational solutions.
+            </p>
+          </div>
+
+          <div className="service-card">
+            <div className="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 3v18h18"></path>
+                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+              </svg>
+            </div>
+            <h3 className="service-title">AI-Powered Data Analytics</h3>
+            <p className="service-description">
+              Transform your raw data into actionable insights with our AI-driven analytics solutions, enabling smarter decisions and accelerated business growth.
+            </p>
+          </div>
+
+          <div className="service-card">
+            <div className="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 className="service-title">Predictive Analytics Engine</h3>
+            <p className="service-description">
+              See tomorrow's opportunities today with AI that analyzes your data to forecast trends, predict churn, and uncover hidden revenue pockets.
+            </p>
+          </div>
+
+          <div className="service-card">
+            <div className="service-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 12l2 2 4-4"></path>
+                <path d="M21 12c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z"></path>
+                <path d="M3 12c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2z"></path>
+                <path d="M12 3c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2z"></path>
+                <path d="M12 21c0 1-1 2-2 2s-2-1-2-2 1-2 2-2 2 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3 className="service-title">Reputation Management</h3>
+            <p className="service-description">
+              Automate your 5-star reputation with comprehensive review aggregation, predictive sentiment analytics, and customizable alert systems.
             </p>
           </div>
         </div>

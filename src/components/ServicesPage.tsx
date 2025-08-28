@@ -20,15 +20,15 @@ const ServicesPage: React.FC = () => {
       {/* Services Overview */}
       <div className="services-overview">
         <div className="overview-content">
-          <h3 className="section-title">Expert Solutions for Modern Challenges</h3>
+          <h3 className="section-title">Next-generation AI Solutions</h3>
           <p className="overview-text">
-            At Aetos AI, we offer comprehensive technology services designed to transform your business. 
-            Our expertise spans across software development, cloud infrastructure, cybersecurity, and 
-            digital transformation to deliver end-to-end solutions tailored to your unique needs.
+            At Aetos AI, we offer next-generation AI solutions engineered to transcend traditional automation boundaries. 
+            Our expertise spans across AI integration, workflow automation, chatbots, data analytics, and 
+            predictive intelligence to deliver transformative solutions tailored to your unique business needs.
           </p>
           <p className="overview-text">
             We believe in a collaborative approach, working closely with you to understand your 
-            challenges and develop strategies that drive measurable results and long-term success.
+            challenges and develop AI strategies that drive measurable results and long-term success.
           </p>
         </div>
       </div>
@@ -38,20 +38,102 @@ const ServicesPage: React.FC = () => {
         <div className="service-category">
           <div className="category-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="16 18 22 12 16 6"></polyline>
-              <polyline points="8 6 2 12 8 18"></polyline>
+              <path d="M9 12l2 2 4-4"></path>
+              <path d="M21 12c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z"></path>
+              <path d="M3 12c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2z"></path>
+              <path d="M12 3c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2z"></path>
+              <path d="M12 21c0 1-1 2-2 2s-2-1-2-2 1-2 2-2 2 1 2 2z"></path>
             </svg>
           </div>
-          <h3 className="category-title">Software Development</h3>
+          <h3 className="category-title">Software + AI Integration</h3>
           <p className="category-description">
-            Custom-built applications and software solutions that address your specific business challenges
-            and opportunities.
+            Seamlessly fuse intelligence into your existing systems. We integrate battle-tested AI engines with your CRM, booking platforms, and operational tools—automating complex workflows, predicting customer behavior, and unlocking hidden efficiencies. No rip-and-replace required, just future-proofed performance.
           </p>
           <ul className="service-list">
-            <li>Custom Web Applications</li>
-            <li>Mobile App Development</li>
-            <li>API Development & Integration</li>
-            <li>Legacy System Modernization</li>
+            <li>Seamless AI Integration</li>
+            <li>Custom AI Solutions</li>
+            <li>Continuous Support and Optimization</li>
+            <li>Legacy System Enhancement</li>
+          </ul>
+        </div>
+
+        <div className="service-category">
+          <div className="category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18"></path>
+            </svg>
+          </div>
+          <h3 className="category-title">Workflow Automation</h3>
+          <p className="category-description">
+            Automate your 5-star reputation. Our system monitors every review (Google, TripAdvisor, social media), responds instantly with brand-aligned messages, and escalates critical issues—turning feedback into growth fuel while protecting your image 24/7.
+          </p>
+          <ul className="service-list">
+            <li>Process Mapping and Analysis</li>
+            <li>Custom Automation Development</li>
+            <li>Seamless Integration</li>
+            <li>Real-time Monitoring & Alerts</li>
+          </ul>
+        </div>
+
+        <div className="service-category">
+          <div className="category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M20 7h-9"></path>
+              <path d="M14 17H5"></path>
+              <circle cx="17" cy="17" r="3"></circle>
+              <circle cx="7" cy="7" r="3"></circle>
+            </svg>
+          </div>
+          <h3 className="category-title">AI Chatbots & Virtual Assistants</h3>
+          <p className="category-description">
+            Deliver instant, intelligent, and personalized interactions across all customer touchpoints with our AI-powered chatbots and virtual assistants.
+          </p>
+          <ul className="service-list">
+            <li>Natural Language Processing (NLP)</li>
+            <li>Seamless Integration</li>
+            <li>Customizable Workflows</li>
+            <li>Multi-platform Support</li>
+          </ul>
+        </div>
+
+        <div className="service-category">
+          <div className="category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 3v18h18"></path>
+              <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"></path>
+            </svg>
+          </div>
+          <h3 className="category-title">AI-Powered Data Analytics</h3>
+          <p className="category-description">
+            Transform your raw data into actionable insights with our AI-driven analytics solutions, enabling smarter decisions and accelerated business growth.
+          </p>
+          <ul className="service-list">
+            <li>Predictive Analytics</li>
+            <li>Real-Time Data Processing</li>
+            <li>Seamless Integration</li>
+            <li>Advanced Visualization</li>
+          </ul>
+        </div>
+
+        <div className="service-category">
+          <div className="category-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M9 12l2 2 4-4"></path>
+              <path d="M21 12c-1 0-2-1-2-2s1-2 2-2 2 1 2 2-1 2-2 2z"></path>
+              <path d="M3 12c1 0 2-1 2-2s-1-2-2-2-2 1-2 2 1 2 2 2z"></path>
+              <path d="M12 3c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2z"></path>
+              <path d="M12 21c0 1-1 2-2 2s-2-1-2-2 1-2 2-2 2 1 2 2z"></path>
+            </svg>
+          </div>
+          <h3 className="category-title">Reputation Management</h3>
+          <p className="category-description">
+            Automate your 5-star reputation. Our system monitors every review (Google, TripAdvisor, social media), responds instantly with brand-aligned messages, and escalates critical issues—turning feedback into growth fuel while protecting your image 24/7.
+          </p>
+          <ul className="service-list">
+            <li>Comprehensive Review Aggregation</li>
+            <li>Predictive Sentiment Analytics</li>
+            <li>Customizable Alert Systems</li>
+            <li>Brand Protection & Crisis Management</li>
           </ul>
         </div>
 
@@ -63,15 +145,15 @@ const ServicesPage: React.FC = () => {
               <path d="M2 12l10 5 10-5"></path>
             </svg>
           </div>
-          <h3 className="category-title">Cloud Services</h3>
+          <h3 className="category-title">Predictive Analytics Engine</h3>
           <p className="category-description">
-            Scalable, secure, and optimized cloud infrastructure solutions to power your business operations.
+            See tomorrow's opportunities today. Our AI analyzes your data to forecast trends, predict churn, and uncover hidden revenue pockets, turning raw numbers into actionable growth strategies.
           </p>
           <ul className="service-list">
-            <li>Cloud Migration & Strategy</li>
-            <li>Infrastructure as Code (IaC)</li>
-            <li>Cloud-Native Development</li>
-            <li>Managed Cloud Services</li>
+            <li>Advanced Machine Learning Models</li>
+            <li>Real-Time Data Processing</li>
+            <li>Seamless Integration</li>
+            <li>Custom Forecasting Models</li>
           </ul>
         </div>
 
@@ -84,33 +166,15 @@ const ServicesPage: React.FC = () => {
               <path d="M2 10h20"></path>
             </svg>
           </div>
-          <h3 className="category-title">DevOps & Automation</h3>
+          <h3 className="category-title">Enterprise Solutions</h3>
           <p className="category-description">
-            Streamlined development workflows and automated processes to increase efficiency and productivity.
+            Scalable solutions designed for growing businesses with comprehensive IT support, proactive monitoring, and maintenance to ensure your systems run smoothly 24/7.
           </p>
           <ul className="service-list">
-            <li>CI/CD Pipeline Implementation</li>
-            <li>Containerization & Orchestration</li>
-            <li>Infrastructure Automation</li>
-            <li>Monitoring & Observability</li>
-          </ul>
-        </div>
-
-        <div className="service-category">
-          <div className="category-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-          </div>
-          <h3 className="category-title">Cybersecurity</h3>
-          <p className="category-description">
-            Comprehensive security solutions to protect your data, systems, and reputation from evolving threats.
-          </p>
-          <ul className="service-list">
-            <li>Security Assessment & Auditing</li>
-            <li>Compliance Implementation (SOC 2, HIPAA)</li>
-            <li>Security Architecture Design</li>
-            <li>Incident Response Planning</li>
+            <li>Proactive Monitoring and Maintenance</li>
+            <li>Scalable Solutions for Growing Businesses</li>
+            <li>Comprehensive IT Support</li>
+            <li>Hardware and Software Management</li>
           </ul>
         </div>
       </div>
