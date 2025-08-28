@@ -7,12 +7,14 @@ const ContactPage: React.FC = () => {
     email: '',
     company: '',
     phone: '',
+    service: '',
     message: '',
   });
   
   const [errors, setErrors] = useState({
     name: '',
     email: '',
+    service: '',
     message: '',
   });
 
@@ -24,7 +26,7 @@ const ContactPage: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
     
@@ -59,6 +61,11 @@ const ContactPage: React.FC = () => {
       valid = false;
     }
     
+    if (!formData.service.trim()) {
+      newErrors.service = 'Service selection is required';
+      valid = false;
+    }
+    
     if (!formData.message.trim()) {
       newErrors.message = 'Message is required';
       valid = false;
@@ -84,6 +91,7 @@ const ContactPage: React.FC = () => {
         email: '',
         company: '',
         phone: '',
+        service: '',
         message: '',
       });
     }
@@ -196,6 +204,30 @@ const ContactPage: React.FC = () => {
                   </div>
                   
                   <div className="contact-form-field">
+                    <label htmlFor="service" className={`contact-input-label ${focused === 'service' || formData.service ? 'contact-label-active' : ''}`}>How can we help you? (required) *</label>
+                    <select
+                      id="service"
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                      onFocus={() => handleFocus('service')}
+                      onBlur={handleBlur}
+                      className={errors.service ? 'error' : ''}
+                    >
+                      <option value="">Select a Service</option>
+                      <option value="software-ai-integration">Software + AI Integration</option>
+                      <option value="workflow-automation">Workflow Automation</option>
+                      <option value="ai-chatbots">AI-Powered Chatbots</option>
+                      <option value="ai-data-analytics">AI-Powered Data Analytics</option>
+                      <option value="custom-ai-solutions">Custom AI Solutions</option>
+                      <option value="business-process-optimization">Business Process Optimization</option>
+                      <option value="digital-transformation">Digital Transformation</option>
+                      <option value="other">Other</option>
+                    </select>
+                    {errors.service && <span className="contact-error-message">{errors.service}</span>}
+                  </div>
+                  
+                  <div className="contact-form-field">
                     <label htmlFor="message" className={`contact-input-label ${focused === 'message' || formData.message ? 'contact-label-active' : ''}`}>Message *</label>
                     <textarea
                       id="message"
@@ -236,8 +268,8 @@ const ContactPage: React.FC = () => {
                     </svg>
                   </div>
                   <div className="contact-method-content">
-                    <h4 className="contact-method-title">Email</h4>
-                    <a href="mailto:info@betaque.com" className="contact-method-value">info@betaque.com</a>
+                    <h4 className="contact-method-title">Atose Mail</h4>
+                    <a href="mailto:aetosai10@gmail.com" className="contact-method-value">aetosai10@gmail.com</a>
                   </div>
                 </div>
 
@@ -248,8 +280,11 @@ const ContactPage: React.FC = () => {
                     </svg>
                   </div>
                   <div className="contact-method-content">
-                    <h4 className="contact-method-title">Phone</h4>
-                    <a href="tel:+12345678990" className="contact-method-value">+1 (234) 567-890</a>
+                    <h4 className="contact-method-title">Phone no.</h4>
+                    <div className="contact-method-value">
+                      <a href="tel:+917011245434">+91 7011245434</a><br />
+                      <a href="tel:+917042101569">+91 7042101569</a>
+                    </div>
                   </div>
                 </div>
 
@@ -261,10 +296,10 @@ const ContactPage: React.FC = () => {
                     </svg>
                   </div>
                   <div className="contact-method-content">
-                    <h4 className="contact-method-title">Office</h4>
+                    <h4 className="contact-method-title">Atose Contacts</h4>
                     <p className="contact-method-value">
-                      123 Tech Plaza, Suite 400<br />
-                      San Francisco, CA 94105
+                      Atose AI<br />
+                      India
                     </p>
                   </div>
                 </div>
@@ -283,21 +318,11 @@ const ContactPage: React.FC = () => {
               </div>
 
               <div className="contact-social-links">
-                <a href="#" className="contact-social-link" aria-label="LinkedIn">
+                <a href="https://www.instagram.com/aetos_ai/" className="contact-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg>
-                </a>
-                <a href="#" className="contact-social-link" aria-label="Twitter">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                  </svg>
-                </a>
-                <a href="#" className="contact-social-link" aria-label="GitHub">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                   </svg>
                 </a>
               </div>
