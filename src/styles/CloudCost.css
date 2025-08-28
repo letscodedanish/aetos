@@ -1,0 +1,101 @@
+.cloud-cost {
+  background-color: white;
+  color: black;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  width: 290px;
+  border: 1px solid rgba(229, 231, 235, 1);
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .cloud-cost {
+    width: 100%;
+    max-width: 320px;
+    padding: 0.5rem;
+  }
+
+  .cloud-cost-header {
+    margin-bottom: 1rem;
+  }
+
+  .cloud-cost-stats-value {
+    font-size: 1.3rem;
+  }
+
+  .cloud-cost-chart {
+    width: 5rem;
+  }
+}
+
+.cloud-cost-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  margin-top: .5rem;
+  place-items: center;
+}
+
+.cloud-cost-title {
+  font-weight: 500;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.cloud-cost-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  max-height: 70px;
+}
+
+.cloud-cost-stats-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.cloud-cost-stats-change {
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  gap: 0.25rem;
+}
+
+.cloud-cost-stats-change-value {
+  color: #12B76A;
+  font-weight: 500;
+}
+
+.cloud-cost-stats-change-text {
+  color: #718096;
+  margin-left: 0.25rem;
+}
+
+.cloud-cost-stats-change-icon {
+  margin-right: 0.25rem;
+  flex-shrink: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.cloud-cost-chart {
+  width: 6.5rem;
+  flex-shrink: 0;
+  max-height: 65px;
+  overflow: hidden;
+}
+
+.cloud-cost-chart img {
+  width: 100%;
+  object-fit: contain;
+}

@@ -1,0 +1,78 @@
+.tt-feature-accordion {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.tt-feature-accordion.tt-align-left {
+  flex-direction: row-reverse;
+}
+
+.tt-accordion-content-slider {
+  width: 360px;
+  max-width: 100%;
+}
+
+.tt-accordion-media-slider {
+  flex: 1;
+}
+
+/* Splide vertical list styling */
+.splide-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Accordion content styles */
+.accordion-content-wrap {
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.heading-default {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #535862;
+  margin: 0;
+}
+
+.accordion-text-wrap {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #535862;
+  margin-top: 8px;
+}
+
+/* Media slide styles */
+.accordion-media-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.accordion-media {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Hide Splide's default arrows and pagination */
+.splide__arrows,
+.splide__pagination {
+  display: none;
+}
+
+/* Active slide heading */
+.splide__slide.is-active .heading-default {
+  color: #181D27;
+}
+
+/* Remove separator on last item */
+.splide__slide:last-child .accordion-content-wrap {
+  border-bottom: none;
+} 

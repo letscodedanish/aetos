@@ -1,0 +1,481 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.industries-page {
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.industries-page-header {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.industries-page-header h2 {
+  position: relative;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.industries-page-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 80px;
+  height: 5px;
+  background-color: black;
+  transition: width 0.4s ease;
+  border-radius: 2.5px;
+}
+
+.industries-page-header:hover h2::after {
+  width: 150px;
+}
+
+.industries-intro {
+  max-width: 800px;
+  margin-bottom: 60px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* Industries Grid */
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.industry-card {
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.industry-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.industry-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.industry-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.industry-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.industry-card:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.industry-card:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+.industry-card:nth-child(6) {
+  animation-delay: 0.7s;
+}
+
+.industry-card-header {
+  position: relative;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+
+.industry-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.industry-card:hover .industry-icon {
+  transform: scale(1.1) rotate(5deg);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.industry-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+  padding-right: 60px;
+}
+
+.industry-subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.industry-content {
+  padding: 30px;
+  background-color: white;
+  color: #333;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.industry-description {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.industry-features {
+  margin-top: auto;
+}
+
+.industry-feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.industry-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  margin-right: 12px;
+  color: black;
+}
+
+.industry-feature-text {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Case Studies Section */
+.case-studies-section {
+  margin-bottom: 80px;
+}
+
+.case-studies-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: -0.01em;
+}
+
+.case-studies-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  transition: width 0.3s ease;
+  border-radius: 1.5px;
+}
+
+.case-studies-title:hover::after {
+  width: 80px;
+}
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+.case-study {
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.case-study:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.case-study:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.case-study:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.case-study:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.case-study-header {
+  padding: 20px 25px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.case-study-industry {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.case-study-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  letter-spacing: -0.01em;
+}
+
+.case-study-content {
+  padding: 25px;
+}
+
+.case-study-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.case-study-results {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 20px;
+}
+
+.case-study-result {
+  text-align: center;
+}
+
+.case-study-result-number {
+  font-size: 24px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.case-study-result-label {
+  font-size: 13px;
+  color: #555;
+  letter-spacing: 0.02em;
+}
+
+/* Contact Section */
+.industries-contact {
+  margin-top: 80px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 0.6s;
+  padding: 60px 40px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.industries-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #000 0%, #444 100%);
+  border-radius: 5px 5px 0 0;
+}
+
+.industries-contact-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.industries-contact-text {
+  color: #333333;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto 40px;
+}
+
+.industries-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: black;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.industries-cta-button svg {
+  transition: transform 0.3s ease;
+}
+
+.industries-cta-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.industries-cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  background-color: #222;
+}
+
+.industries-cta-button:hover svg {
+  transform: translateX(5px);
+}
+
+.industries-cta-button:hover::after {
+  left: 100%;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .case-studies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .industry-card-header {
+    padding: 35px;
+  }
+  
+  .industry-content {
+    padding: 35px;
+  }
+  
+  .industry-title {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .industries-page {
+    padding: 80px 40px;
+  }
+  
+  .industries-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .case-studies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .industries-page-header h2 {
+    font-size: 52px;
+  }
+  
+  .case-studies-title {
+    font-size: 32px;
+  }
+} 
