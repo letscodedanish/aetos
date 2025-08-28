@@ -22,7 +22,7 @@ const AboutUsPage: React.FC = () => {
         <div className="story-content">
           <h3 className="section-title">Our Story</h3>
           <p className="story-text">
-            Founded in 2010, Aetose began with a simple mission: to bridge the gap between complex technology 
+            Founded in 2010, Aetos AI began with a simple mission: to bridge the gap between complex technology 
             and business value. What started as a small team of passionate developers has grown into a diverse 
             company of technology experts, strategists, and innovators.
           </p>
@@ -128,7 +128,7 @@ const AboutUsPage: React.FC = () => {
             <h4 className="member-name">John Doe</h4>
             <p className="member-title">Chief Executive Officer</p>
             <p className="member-bio">
-              With over 20 years of experience in technology leadership, John has guided Aetose's strategic 
+              With over 20 years of experience in technology leadership, John has guided Aetos AI's strategic 
               vision since founding the company in 2010.
             </p>
           </div>

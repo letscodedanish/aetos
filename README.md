@@ -1,6 +1,6 @@
-# Aetose Website
+# Aetos AI Website
 
-A React application that showcases the Aetose company website with a modern and responsive design.
+A React application that showcases the Aetos AI company website with a modern and responsive design.
 
 ## Features
 

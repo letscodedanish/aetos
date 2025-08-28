@@ -302,7 +302,7 @@ const WhyUsPage: React.FC = () => {
           <div className="testimonial">
             <div className="testimonial-content">
               <p className="testimonial-text">
-                "Aetose transformed our outdated systems into a modern, scalable platform that has dramatically 
+                "Aetos AI transformed our outdated systems into a modern, scalable platform that has dramatically 
                 improved our operational efficiency. Their technical expertise and client-focused approach made 
                 them the perfect partner for our digital transformation journey."
               </p>
@@ -321,7 +321,7 @@ const WhyUsPage: React.FC = () => {
           <div className="testimonial">
             <div className="testimonial-content">
               <p className="testimonial-text">
-                "The mobile application developed by Aetose has received outstanding feedback from our users. 
+                "The mobile application developed by Aetos AI has received outstanding feedback from our users. 
                 Their development process was transparent, and they consistently delivered on time and within 
                 budget. We couldn't be happier with the results."
               </p>
@@ -340,7 +340,7 @@ const WhyUsPage: React.FC = () => {
           <div className="testimonial">
             <div className="testimonial-content">
               <p className="testimonial-text">
-                "Aetose's cloud migration strategy saved us significant operational costs while improving 
+                "Aetos AI's cloud migration strategy saved us significant operational costs while improving 
                 our system's performance and reliability. Their team's deep expertise in cloud services and 
                 DevOps has been invaluable to our business growth."
               </p>
@@ -360,7 +360,7 @@ const WhyUsPage: React.FC = () => {
 
       <div className="why-us-footer">
         <p className="why-us-footer-text">
-          Choose Aetose for a partner that combines technical excellence with a genuine commitment to your success. 
+          Choose Aetos AI for a partner that combines technical excellence with a genuine commitment to your success. 
           Our innovative approach, efficiency, and deep expertise make us the ideal choice for organizations 
           seeking to transform their digital presence and capabilities.
         </p>

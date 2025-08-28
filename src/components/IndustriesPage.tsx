@@ -17,7 +17,7 @@ const IndustriesPage: React.FC = () => {
       </div>
       
       <p className="industries-intro">
-        At Aetose, we provide tailored technology solutions across diverse industries, leveraging our expertise to address 
+        At Aetos AI, we provide tailored technology solutions across diverse industries, leveraging our expertise to address 
         sector-specific challenges and drive innovation. Our deep industry knowledge enables us to deliver customized solutions 
         that help businesses achieve their strategic objectives and stay ahead in rapidly evolving markets.
       </p>
@@ -392,7 +392,7 @@ const IndustriesPage: React.FC = () => {
       <div className="industries-contact">
         <h3 className="industries-contact-title">Ready to Transform Your Industry?</h3>
         <p className="industries-contact-text">
-          Partner with Aetose to leverage our industry expertise and innovative technology solutions tailored to your 
+          Partner with Aetos AI to leverage our industry expertise and innovative technology solutions tailored to your 
           specific challenges. Let's collaborate to drive efficiency, enhance customer experiences, and accelerate your 
           digital transformation journey.
         </p>

@@ -17,7 +17,7 @@ const SecurityPage: React.FC = () => {
       </div>
       
       <p className="security-intro">
-        At Aetose, we implement rigorous security measures to protect your data and applications. Our comprehensive 
+        At Aetos AI, we implement rigorous security measures to protect your data and applications. Our comprehensive 
         approach to security ensures that our systems meet the highest industry standards and compliance requirements.
       </p>
       
@@ -134,7 +134,7 @@ const SecurityPage: React.FC = () => {
               </div>
               <div className="security-content">
                 <p className="security-text">
-                  Aetose maintains ISO 27001 certification, demonstrating our commitment to information security management. 
+                  Aetos AI maintains ISO 27001 certification, demonstrating our commitment to information security management. 
                   This certification verifies that we have implemented a systematic approach to managing sensitive information 
                   and ensuring business continuity through comprehensive risk management practices.
                 </p>
@@ -288,7 +288,7 @@ const SecurityPage: React.FC = () => {
       <div className="security-footer">
         <h3 className="security-footer-title">Ready to Secure Your Business?</h3>
         <p className="security-footer-text">
-          At Aetose, we prioritize the security and privacy of your data. Our comprehensive security framework 
+          At Aetos AI, we prioritize the security and privacy of your data. Our comprehensive security framework 
           ensures your information remains protected while enabling your business to leverage our powerful services.
           Contact us today to learn more about how we can help secure your operations.
         </p>

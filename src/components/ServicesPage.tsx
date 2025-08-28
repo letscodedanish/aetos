@@ -22,7 +22,7 @@ const ServicesPage: React.FC = () => {
         <div className="overview-content">
           <h3 className="section-title">Expert Solutions for Modern Challenges</h3>
           <p className="overview-text">
-            At Aetose, we offer comprehensive technology services designed to transform your business. 
+            At Aetos AI, we offer comprehensive technology services designed to transform your business. 
             Our expertise spans across software development, cloud infrastructure, cybersecurity, and 
             digital transformation to deliver end-to-end solutions tailored to your unique needs.
           </p>
