@@ -134,7 +134,7 @@ const HomePage: React.FC = () => {
       <section className="home-section why-us-section">
         <div className="why-us-container">
           <div className="why-us-content">
-            <h2 className="why-us-title">Why Choose Betaque?</h2>
+            <h2 className="why-us-title">Why Choose Aetos AI?</h2>
             <div className="why-us-features">
               <div className="why-us-feature">
                 <div className="feature-icon">
@@ -203,7 +203,7 @@ const HomePage: React.FC = () => {
         <div className="home-cta-container">
           <h2 className="home-cta-title">Ready to Transform Your Business?</h2>
           <p className="home-cta-text">
-            Partner with Betaque to leverage cutting-edge technology solutions tailored to your specific challenges.
+            Partner with Aetos AI to leverage cutting-edge technology solutions tailored to your specific challenges.
           </p>
           <Link to="/contact" className="home-cta-button">
             Get Started
