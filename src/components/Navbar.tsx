@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar-container">
       <div className="logo">
-        <Link to="/" className="logo-text">Aetos AI.</Link>
+        <Link to="/" className="logo-text">betaque.</Link>
       </div>
 
       {/* Desktop Navigation */}

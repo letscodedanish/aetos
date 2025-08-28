@@ -7,12 +7,14 @@ const ContactPage: React.FC = () => {
     email: '',
     company: '',
     phone: '',
+    service: '',
     message: '',
   });
   
   const [errors, setErrors] = useState({
     name: '',
     email: '',
+    service: '',
     message: '',
   });
 
@@ -24,7 +26,7 @@ const ContactPage: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
     
@@ -59,6 +61,11 @@ const ContactPage: React.FC = () => {
       valid = false;
     }
     
+    if (!formData.service.trim()) {
+      newErrors.service = 'Service selection is required';
+      valid = false;
+    }
+    
     if (!formData.message.trim()) {
       newErrors.message = 'Message is required';
       valid = false;
@@ -84,6 +91,7 @@ const ContactPage: React.FC = () => {
         email: '',
         company: '',
         phone: '',
+        service: '',
         message: '',
       });
     }
@@ -193,6 +201,30 @@ const ContactPage: React.FC = () => {
                         placeholder="Your phone number"
                       />
                     </div>
+                  </div>
+                  
+                  <div className="contact-form-field">
+                    <label htmlFor="service" className={`contact-input-label ${focused === 'service' || formData.service ? 'contact-label-active' : ''}`}>How can we help you? (required) *</label>
+                    <select
+                      id="service"
+                      name="service"
+                      value={formData.service}
+                      onChange={handleChange}
+                      onFocus={() => handleFocus('service')}
+                      onBlur={handleBlur}
+                      className={errors.service ? 'error' : ''}
+                    >
+                      <option value="">Select a Service</option>
+                      <option value="software-ai-integration">Software + AI Integration</option>
+                      <option value="workflow-automation">Workflow Automation</option>
+                      <option value="ai-chatbots">AI-Powered Chatbots</option>
+                      <option value="ai-data-analytics">AI-Powered Data Analytics</option>
+                      <option value="custom-ai-solutions">Custom AI Solutions</option>
+                      <option value="business-process-optimization">Business Process Optimization</option>
+                      <option value="digital-transformation">Digital Transformation</option>
+                      <option value="other">Other</option>
+                    </select>
+                    {errors.service && <span className="contact-error-message">{errors.service}</span>}
                   </div>
                   
                   <div className="contact-form-field">
